@@ -1,0 +1,1281 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+header {
+  background-color: white;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Aligns content to the left */
+  width: 100%;
+
+}
+
+.logo {
+  margin-right: 1rem; /* Adjust spacing between the logo and the menu */
+}
+
+.logo img {
+  display: flex;
+  height: 50px;
+  width: auto;
+  padding-left: 100px;
+  align-items: center;
+}
+
+/* Navbar links */
+.page-wrapper .navbar .nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Controls the space between menu items */
+  margin: 0; /* Remove default margin */
+  padding-right: 30px; /* Remove default padding */
+  flex-grow: 1;
+  flex-wrap: nowrap;
+  
+
+}
+
+.page-wrapper .nav-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.7rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  padding-right: 10px;
+}
+
+.nav-links a:hover {
+  color: #00c4ff;
+}
+
+.nav-links li a {
+  white-space: nowrap; /* Prevent individual items from wrapping */
+  display: inline-flex; /* Align the text and arrow in a line */
+  align-items: center; /* Vertically center the items */
+}
+
+.arrow-down {
+  font-size: 0.8rem;
+  margin-left: 5px;
+  vertical-align: middle; /* Ensures the arrow aligns vertically with the text */
+}
+
+
+.page-wrapper .login-btn a {
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+  color: #333;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  background-color: transparent;
+  border: 2px solid #D0D5DD;
+  display: flex; /* Use flexbox to align text */
+  justify-content: center; /* Horizontally center the text */
+  align-items: center; /* Vertically center the text */
+  min-width: 100px; /* Ensure a minimum width */
+  text-align: center; /* Make sure text alignment is centered */
+}
+
+
+.login-btn a:hover {
+  background-color: #ab9797;
+  color: white;
+}
+
+.page-wrapper .btn-demo {
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+  color: #ac33ff;
+  border: 2px solid #ac33ff;
+  transition: all 0.3s ease;
+  display: flex; /* Enable flexbox for centering */
+  justify-content: center; /* Center text horizontally */
+  align-items: center; /* Center text vertically */
+  min-width: 120px; /* Set a minimum width */
+  text-align: center; /* Ensure text alignment is centered */
+}
+
+
+.btn-demo:hover {
+  background-color: #008dbd;
+  color: white;
+}
+
+.nav-links li:last-child {
+  margin-left: auto; /* Push the last button (Book a Demo) to the far right */
+}
+
+/* Section Layout */
+.section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem; /* Gap from navbar */
+}
+
+/* Left Section: Text Content */
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 50%; /* Takes 50% of the screen */
+  padding: 2rem;
+}
+
+/* Text Block */
+.text-block {
+  padding: 10px 20px; /* Reduced padding */
+  border-radius: 50px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  margin-bottom: 2rem;
+  width: fit-content; /* Adjusts to the content size */
+  margin-left: 90px;
+  border: none;
+}
+
+.text-block p {
+  font-size: 0.9rem; /* Slightly smaller font */
+  font-weight: bold;
+}
+
+/* Gradient Text Styling */
+.gradient-text {
+  background: linear-gradient(to right, #7f00ff, #ac33ff); /* Dark violet to light violet gradient */
+  -webkit-background-clip: text; /* This works in webkit browsers */
+  background-clip: text; /* For browsers that support background-clip */
+  color: transparent; /* Set text color to transparent to allow gradient */
+  font-size: 2.5rem; /* Medium font size */
+  font-weight: bold;
+  display: inline-block;
+}
+
+/* Price Text Styling */
+.price-text {
+  color: red; /* Red color for $99 */
+  font-size: 2.5rem; /* Medium font size */
+  font-weight: bold;
+}
+
+/* Header h2 Font Size */
+.text-group h2 {
+  font-size: 3rem; /* Medium font size for the whole header */
+  font-weight: bold;
+  margin-left: 60px; /* Slightly move the text to the left */
+}
+
+.text-group {
+  width: 100%;
+  text-align: left; /* Align text to the left */
+  margin-left: 30px; /* Move all text in this block slightly to the left */
+}
+
+.description {
+  margin-top: 1rem;
+  font-size: 1rem;
+  text-align: left; /* Align text to the left */
+  margin-bottom: 2rem;
+  line-height: 1.5;
+  margin-left: 60px; /* Adjust the left margin to move the text slightly to the right */
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-left: 90px; /* Adjust this value to move buttons slightly to the right */
+}
+
+/* Get Started Button */
+.book-demo-btn {
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+  color: #B262F3;
+  border: 1px solid #B262F3;
+  transition: all 0.3s ease;
+}
+
+.get-started-btn {
+  background: linear-gradient(to right, #B564F7, #6A2F9B); /* Add gradient from left to right */
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+  color: white;
+  border: none; /* Optional: Remove any default border */
+  transition: background 0.3s ease; /* Optional: Add transition for smooth effect */
+}
+
+.get-started-btn:hover,
+.book-demo-btn:hover {
+  background-color: no;
+  color: white;
+}
+
+.book-demo-btn {
+  border-color: #ac33ff;
+}
+
+/* Right Section: Image Section */
+.image-section {
+  width: 50%; /* Takes 50% of the screen */
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.image-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.image-item {
+  width: 48%; /* Make the images fit side by side with some space between */
+  height: auto;
+  object-fit: cover;
+}
+
+.image-item-3 {
+  margin-left: 110px;
+  width: 80%;
+  height: auto;
+  object-fit: cover;
+  margin-top: 1rem; /* Space between the bottom image and the first two */
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  background: black;
+  height: 3px;
+  width: 25px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
+  }
+
+  .nav-links.active {
+    height: 300px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .section {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .text {
+    width: 100%; /* Full width on small screens */
+  }
+
+  .image-section {
+    width: 100%; /* Full width for image section */
+    margin-top: 2rem;
+  }
+
+  .image-section img {
+    width: 100%; /* Make images full-width */
+  }
+}
+
+/* Wrapper for Background */
+.page-wrapper {
+  background-color: #f5f5f5; /* Change this to your desired color */
+  min-height: 100vh; /* Ensures the wrapper spans the full height of the page */
+}
+
+/* New Section with White Background and Image */
+.image-section-container {
+  background-color: white; /* White background */
+  padding: 2rem;
+  text-align: center; /* Center the image */
+}
+
+.section-image {
+  width: 95%; /* Make the image full width */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 100%; /* Prevent stretching */
+  margin-left: 80px;
+}
+
+/* Centered Text Section */
+.centered-text {
+  text-align: center; /* Center the text */
+  padding: 2rem;
+  background-color: #f1f1f1; /* Same background color as the first section */
+  font-family: Calibri, sans-serif; /* Apply Calibri font */
+}
+
+.centered-tex .violet-text {
+  background: linear-gradient(to right, #B564F7, #6A2F9B);
+  font-weight: bold; /* Make the text bold */
+}
+
+.centered-text p {
+  font-size: 3rem; /* Increase font size for better readability */
+  line-height: 1.5;
+  margin-bottom: 1rem; /* Space between paragraphs */
+  font-weight: bold; /* Make the text bold */
+}
+
+/* Bottom paragraph with different font */
+.centered-text .bottom-paragraph {
+  font-family: "Arial", sans-serif; /* Change font to Arial or any other font */
+  font-size: 0.8rem; /* Set a slightly smaller font size */
+  line-height: 1.6;
+  margin-top: 1rem; /* Add top margin for spacing */
+  font-weight: normal;
+}
+
+/* Frame Styles */
+.frame {
+  background-color: #ffffff; /* White background for the frame */
+  padding: 2rem;
+  margin-top: 2rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+}
+
+/* Frame Heading Styles */
+.frame-heading {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.frame-image {
+  width: 40px;
+  height: auto;
+}
+
+.frame-title {
+  font-size: 1.8rem;
+  font-family: Calibri, sans-serif;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Frame Content Layout */
+.frame-content {
+  display: flex; /* This creates a two-column layout */
+  justify-content: space-between; /* Space between left and right content */
+  align-items: flex-start; /* Align content to the top */
+  padding: 20px;
+  gap: 30px; /* Adds space between the two columns */
+}
+
+/* Left Side Content */
+.left-side {
+  width: 50%;
+  padding-right: 1rem; /* Space between the content and the border */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-right: 2px solid #ddd; /* Thin vertical line between the two sides */
+}
+
+/* Logo and Paragraph Styles */
+.logo {
+  width: 200px; /* Slightly larger size for the logo */
+  height: auto;
+  margin-bottom: 0.9rem; /* Space between logo and paragraph */
+  margin-right: 350px;
+}
+
+/* Left Section: Adjusting paragraph font size */
+.frame-content .left-side .left-paragraph {
+  font-size: 0.9rem; /* Set to a more standard size */
+  color: #555; /* Set a neutral dark color */
+  line-height: 1.5; /* Increased line height for readability */
+  text-align: left; /* Align all text to the left */
+  padding-left: 25px; /* Remove extra padding */
+  margin-left: 0; /* Remove any unwanted margin */
+}
+
+/* Styling the right-side section */
+.right-side {
+  display: flex;
+  gap: 20px; /* Space between each box */
+  flex-direction: column; /* Arrange boxes vertically */
+  align-items: center; /* Align boxes to the center horizontally */
+  justify-content: flex-start; /* Align the boxes to the top */
+  margin: 0 auto; /* Center the container in the page */
+  max-width: 800px; /* Increase the max width to make it larger */
+  margin-top: -20px; /* Add space at the top of the section */
+}
+
+/* Styling for rectangular boxes */
+.right-side .rectangular-box {
+  background-color: transparent;
+  border-radius: 20px;
+  border: 2px solid #ccc;
+  width: 500px; /* Increased width */
+  height: auto; /* Allow box height to adjust based on content */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 20px; /* Padding around the content */
+  position: relative;
+  box-sizing: border-box;
+  margin-bottom: 20px; /* Add space between the boxes */
+}
+
+/* For the second box that has a button */
+.second-box {
+  position: relative;
+  padding-top: 40px; /* Add extra padding at the top to avoid overlap */
+}
+
+/* Ensure the parent box has relative positioning */
+.right-side .rectangular-box {
+  position: relative; /* Enable absolute positioning for children */
+}
+
+/* Styling for the button inside the second rectangular box */
+.box-button {
+  position: absolute;
+  top: 10px; /* Position it at the top */
+  left: 10px; /* Position it on the left */
+  background-color: #475467; /* Set background color */
+  color: white; /* Text color */
+  border: none;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  z-index: 1; /* Ensure the button appears above the content */
+}
+
+.right-side .box-button:hover {
+  background-color: #7f00ff; /* Change background on hover */
+}
+
+/* Styling for text inside the rectangular boxes */
+.right-side .rectangular-box p {
+  font-size: 14px;
+  color: black;
+  margin: 5px 0;
+  padding: 0;
+}
+
+.small-text {
+  font-size: 12px;
+  color: #888;
+  margin-top: 5px;
+}
+
+/* Styling for the CTA (call-to-action) button */
+.right-side .cta-button-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center; /* Center the button */
+}
+
+.cta-button {
+  background-color: #B262F3;
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #7f00ff;
+}
+
+.centered-paragraph {
+  text-align: center; /* Center align the text */
+  margin-top: 20px; /* Add some space above the paragraph */
+  font-size: 1.2rem; /* Adjust the font size as needed */
+  line-height: 1.5; /* Improve readability */
+}
+
+.violet-text {
+  color: violet; /* Apply violet color to the text */
+  font-weight: bold; /* Make it stand out */
+}
+
+/* Forms Section Styling */
+.form-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px; /* Add space between the forms */
+  margin-top: 50px; /* Space above the form container */
+}
+
+.form-box {
+  padding-top: -100px;
+  text-align: center; /* Center align content inside each form */
+  padding: 20px; /* Add padding for better spacing */
+  border: 1px solid #ccc; /* Optional border */
+  background-color: white; /* Set background to white */
+  border-radius: 15px; /* Rounded corners */
+  width: 300px; /* Increase the width of the form */
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for a modern look */
+}
+
+.form-box img.icon {
+  margin-top: 1rem;
+  width: 200px; /* Increase the top icon size */
+  height: 100px;
+  margin-bottom: 1rem; /* Space below the icon */
+}
+
+.form-box img.medium-image {
+  width: 200px; /* Increase the medium image size */
+  height: auto;
+  margin-top: 1rem; /* Space above the medium image */
+}
+
+.form-box .form-paragraph {
+  font-size: 10px !important; /* Forcefully override */
+  color: #333;
+  padding: 0 15px 20px;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+/* Container for all rectangular boxes */
+.rectangular-box-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px; /* Reduced gap between boxes */
+  margin-top: 50px; /* Space above the rectangular boxes */
+  flex-wrap: wrap; /* Ensure boxes wrap on smaller screens */
+  margin-bottom: 50px; /* Extra space below the boxes */
+  margin-left: auto; /* Align to the left side */
+  margin-right: auto; /* Align to the right side */
+  max-width: 1000px; /* Ensure it doesn't overflow on large screens */
+}
+
+/* Rectangular Box Styling */
+.rectangular-box {
+  width: 280px; /* Width for each box */
+  padding: 20px;
+  background-color: transparent; /* Slightly transparent background for a cleaner look */
+  border: 1px solid #ccc; /* Border for the box */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Light shadow */
+  text-align: left;
+  box-sizing: border-box; /* Ensure padding is included in the width */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition for hover effects */
+}
+
+/* Hover effect for rectangular box */
+.rectangular-box:hover {
+  transform: translateY(-5px); /* Lift the box slightly on hover */
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15); /* Enhance the shadow on hover */
+}
+
+/* Heading inside each rectangular box */
+.box-heading h4 {
+  font-size: 16px; /* Smaller text size for heading */
+  margin-bottom: 10px;
+  font-weight: bold; /* Make the heading stand out */
+  color: #333; /* Dark text for visibility */
+}
+
+/* Paragraph inside each rectangular box */
+.rectangular-box-container .box-paragraph {
+  font-size: 10px; /* Smaller font size for paragraph text */
+  color: #555; /* Slightly lighter color for paragraphs */
+  line-height: 1.5;
+  margin-bottom: 10px; /* Add space between the paragraph and other content */
+}
+
+/* Make sure that the content inside the box is aligned properly */
+.box-paragraph:last-child {
+  margin-bottom: 0; /* Remove margin from the last paragraph */
+}
+
+/* Make the boxes responsive */
+@media (max-width: 768px) {
+  .rectangular-box-container {
+    justify-content: center; /* Center the boxes on small screens */
+  }
+  
+  .rectangular-box {
+    width: 100%; /* Full width on smaller screens */
+    max-width: 320px; /* Ensure a maximum width */
+  }
+}
+
+/* Paragraph with Logo Image Section */
+.video-business-section {
+  margin-top: 20px; /* Reduced space above the paragraph */
+  text-align: center; /* Center align the paragraph */
+}
+
+/* Adjusting the text */
+.video-business-text {
+  font-size: 14px; /* Slightly smaller font size */
+  color: #333; /* Default color for the text */
+  line-height: 1.5;
+  margin: 0 auto; /* Center the text */
+  max-width: 600px; /* Limit width to align with the form */
+}
+
+/* Styling for the 'business' text */
+.business-text {
+  color: #a554e6; /* Purple color for 'business' text */
+}
+
+/* Styling for the logo image */
+.business-logo {
+  width: 80px; /* Adjust the size of the logo image */
+  height: auto;
+  margin: 0 5px; /* Reduced space around the logo */
+  display: inline-block; /* Ensure logos are inline with the text */
+}
+
+/* Paragraph with Logo Image Section */
+.video-business-section {
+  margin-top: 40px; /* Space above the paragraph */
+  text-align: left; /* Align text to the left */
+}
+
+.video-business-text {
+  font-size: 16px; /* Adjust the font size */
+  color: #333; /* Default color for the text */
+  line-height: 1.5;
+}
+
+.business-text {
+  color: #a554e6; /* Purple color for 'business' text */
+}
+
+.business-logo {
+  width: 100px; /* Adjust the size of the logo image */
+  height: auto;
+  margin: 0 10px; /* Add some space around the logo */
+  display: inline-block; /* Align the logo inline with the text */
+  vertical-align: middle; /* Align the logo vertically with the text */
+}
+
+/* Service Container to hold the boxes */
+.service-container {
+  display: flex;
+  justify-content: space-between; /* Space between the boxes */
+  gap: 10px; /* Reduced space between each service box */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  margin-top: 30px; /* Align with the form */
+  margin-bottom: 30px; /* Align bottom spacing */
+}
+
+/* Individual service boxes */
+.service-container .service-box {
+  display: flex;
+  flex-direction: column;
+  text-align: center; /* Center align text inside each box */
+  width: 23%; /* Adjust width to fit four items side by side */
+  margin-bottom: 20px; /* Space between the boxes */
+  white-space: nowrap; /* Prevent text from breaking into a new line */
+  overflow: hidden; /* Hide text that overflows */
+  text-overflow: ellipsis; /* Add ellipsis for overflowed text */
+}
+
+/* Service box icon styling */
+.service-container .service-icon {
+  width: 80%; /* Make the icons responsive */
+  height: auto;
+  border-radius: 10px; /* Optional: Rounded corners for icons */
+  margin: 0 auto; /* Center the icons */
+}
+
+/* Service caption styling */
+.service-container .service-caption {
+  margin-top: 10px; /* Space above the caption */
+  font-size: 14px; /* Adjust font size for caption */
+  color: #333; /* Dark color for visibility */
+  text-align: center; /* Align the text centrally */
+  white-space: nowrap; /* Prevent wrapping of the caption text */
+  overflow: hidden; /* Hide overflowed text */
+  text-overflow: ellipsis; /* Add ellipsis for long captions */
+}
+
+/* Section with White Background and Flexbox Layout */
+.popular-section {
+  display: flex;
+  align-items: center; /* Vertically center the content */
+  justify-content: space-between; /* Space between media and text */
+  background-color: white; /* White background */
+  padding: 20px 30px; /* Padding for better spacing */
+  margin-top: 20px; /* Align the section closer to the previous content */
+  margin-bottom: 30px; /* Align with form */
+}
+
+/* Media container within the popular section */
+.popular-section .media-container {
+  width: 40%; /* Media will take 40% of the width */
+}
+
+.popular-section .section-media {
+  width: 100%; /* Make the media responsive */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Optional: Add rounded corners */
+}
+
+/* Text container in the popular section */
+.popular-section .text-container {
+  width: 55%; /* Text container will take 55% of the width */
+}
+
+/* Section heading styling */
+.popular-section .section-heading {
+  font-size: 32px; /* Reduced heading size */
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: left; /* Align left to match form */
+}
+
+/* Paragraph text in popular section */
+.popular-section .section-paragraph {
+  font-size: 14px; /* Reduced font size for better alignment */
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: left; /* Align left to match form */
+  font-weight: normal;
+}
+
+/* Button styling */
+.learn-more-btn {
+  padding: 8px 16px; /* Adjusted button padding */
+  font-size: 14px; /* Smaller button text size */
+  background-color: #5c6bc0; /* Button color */
+  color: white; /* Button text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.popular-section .button-container {
+  text-align: left; /* Align button to the left */
+}
+
+.learn-more-btn:hover {
+  background-color: #3949ab; /* Change color on hover */
+}
+
+
+/* Client Stories Section */
+.client-stories {
+  text-align: center; /* Center align the text */
+  margin-top: 50px; /* Add space above the section */
+}
+
+.client-stories-text {
+  font-size: 18px; /* Adjust font size */
+  color: #333; /* Default text color */
+}
+
+.client-icon {
+  width: 100px; /* Adjust icon size */
+  height: auto;
+  margin-left: 10px; /* Space between text and icon */
+}
+
+.purple-text {
+  color: #8e24aa; /* Purple color for "Our partners say" */
+}
+
+.client-stories .client-stories-text br {
+  display: block; /* Ensures line break happens properly */
+  margin-top: 10px; /* Adds some space after the first line */
+}
+
+/* Flexbox for Partners */
+.partner-row {
+  display: flex;
+  justify-content: space-around; /* Distribute partners evenly */
+  gap: 5px; /* Add some space between partners */
+  margin-top: 30px; /* Add space above partners */
+  position: relative;
+}
+
+.partner-item {
+  width: 100px; /* Adjust size of partner images */
+  height: auto;
+  position: relative; /* Positioning relative for the eclipse image */
+}
+
+.partner-row .partner-item:first-child {
+  width: 280px; /* Adjust size for the first image */
+}
+
+.partner-row .partner-item:nth-child(2) {
+  width: 300px; /* Adjust size for the first image */
+}
+
+.partner-row .partner-item:nth-child(3) {
+  width: 300px; /* Adjust size for the first image */
+}
+
+.partner-row .partner-item:nth-child(4) {
+  width: 300px; /* Adjust size for the first image */
+}
+
+/* Eclipse Container inside Partner Item */
+.eclipse-container {
+  padding-top: 100px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 10; /* Ensure it stays on top of the first partner image */
+}
+
+/* Eclipse Image */
+.eclipse-image {
+  width: 80px; /* Adjust size */
+  height: 80px; /* Adjust size */
+}
+
+/* Partner Name Image under Eclipse */
+.name-image {
+  width: 60px; /* Adjust size */
+  height: auto;
+  margin-top: 10px; /* Space below the eclipse image */
+}
+
+/* Partner Image 1 */
+.partner-image {
+  width: 100%; /* Make sure the partner image takes the full size of the container */
+  height: auto;
+  position: relative;
+}
+
+/* Flexbox to position the tweets side by side */
+.side-by-side {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Space between the tweets */
+  margin-top: 30px; /* Space above the wrapper */
+}
+
+/* Tweet Styling */
+.tweets {
+  background-color: white; /* White background for the tweet */
+  width: 48%; /* Each tweet will take up 50% of the container width */
+  padding: 20px; /* Padding for the tweet */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  position: relative; /* Allow positioning of icon */
+  overflow: hidden; /* Prevent overflow of large font */
+  display: flex;
+  flex-direction: column; /* Align content in column */
+  justify-content: space-between;
+  padding-bottom: 40px; /* Add space at the bottom */
+}
+
+/* Icon Positioning */
+.icon-location {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.icon-location img {
+  width: 300px; /* Increase icon size to 300px */
+  height: auto;
+}
+
+/* Tweet Title */
+.tweets h3 {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Blockquote styling for the text under the image */
+.quote-text {
+  font-size: 24px; /* Keep text font size unchanged */
+  color: #333;
+  line-height: 1.5;
+  text-align: left; /* Align text to the left */
+  font-style: italic;
+  margin-top: 50px; /* Add margin to separate from icon */
+  padding-left: 10px; /* Add padding to align the text */
+  word-wrap: break-word; /* Breaks long words */
+  overflow: hidden; /* Prevent text from overflowing the container */
+  max-width: 100%; /* Prevent text from going outside the container */
+}
+
+/* Add quotation mark styles */
+.quote-text::before {
+  content: "“";
+  font-size: 30px; /* Adjust quotation mark size */
+  position: absolute;
+  top: -50px;
+  left: 0;
+  color: #999;
+}
+
+.quote-text::after {
+  content: "”";
+  font-size: 30px; /* Adjust quotation mark size */
+  position: absolute;
+  bottom: -50px;
+  right: 0;
+  color: #999;
+}
+
+/* Image Styling */
+.image-container img {
+  width: 300px; /* Set image size to 300px */
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+  margin: 0 auto; /* Center the image */
+}
+
+@media (max-width: 768px) {
+  /* Ensure responsiveness by scaling down the text for smaller screens */
+  .quote-text {
+    font-size: 20px;
+  }
+
+  .quote-text::before,
+  .quote-text::after {
+    font-size: 25px;
+  }
+
+  .image-container img {
+    width: 100%; /* Adjust image size for smaller screens */
+  }
+
+  .icon-location img {
+    width: 150px; /* Adjust icon image size for small screens */
+  }
+}
+
+/* FAQ Section */
+.faq-section {
+  margin-top: 50px; /* Space above the FAQ section */
+  text-align: center; /* Center align the text */
+}
+
+/* FAQ Title */
+.faq-title {
+  font-size: 36px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Highlight "questions" in purple */
+.faq-highlight {
+  color: purple; /* Set color of "questions" to purple */
+}
+
+/* FAQ Paragraph */
+.faq-section .faq-paragraph {
+  font-size: 16px; /* Smaller font size for the paragraph */
+  color: #333;
+  font-weight: normal; /* Remove bold */
+  margin-top: 10px; /* Space above the paragraph */
+}
+
+/* Container for all the whiteboards */
+.whiteboard-container {
+  margin-top: 50px; /* Space above the container */
+  display: flex;
+  flex-direction: column; /* Align whiteboards vertically */
+  gap: 20px; /* Space between whiteboards */
+}
+
+/* Individual whiteboard */
+.whiteboard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Whiteboard content (heading and text) */
+.whiteboard-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 80%;
+  text-align: left;
+}
+
+/* Whiteboard heading */
+.whiteboard-heading {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px; /* Space between heading and text */
+}
+
+/* Whiteboard text for the first whiteboard */
+.whiteboard-container .whiteboard-text {
+  font-size: 12px; /* Smaller font size for supporting text */
+  color: #666;
+  line-height: 1.5;
+  margin-left: 0; /* Align text left with the heading */
+  padding-left: 0; /* No additional padding */
+}
+
+/* Whiteboard question section */
+.whiteboard-question {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+}
+
+.whiteboard-question .question-img {
+  width: 100%;
+  height: auto;
+}
+
+/* White Background Container */
+.white-background-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  box-sizing: border-box;
+  gap: 20px;
+}
+
+/* Left Section */
+.left-section {
+  flex: 1;
+  text-align: left;
+}
+
+.white-background-container .logo {
+  font-weight: bold;
+  font-size: 50px;
+  padding-top: 20px;
+  padding-left: 90px;
+}
+
+.white-background-container .about-us {
+  font-size: 20px;
+  color: black;
+  margin-top: 5px;
+  padding-left: 90px;
+}
+
+.white-background-container .description {
+  font-size: 16px;
+  color: #344054;
+  line-height: 1.5;
+  margin-top: 15px;
+  text-align: left; /* Align text to the left */
+  padding-left: 30px;
+}
+
+.white-background-container .buttons {
+  margin-top: 20px;
+  padding-right: 250px;
+}
+
+.login-btn {
+  background-color: transparent;
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+  color: black;
+  width: 150px;
+  border-color: #d0d5dd;
+}
+
+.demo-btn {
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+  color: white;
+  border: 2px solid transparent;
+  background-color: #b564f7;
+  transition: all 0.3s ease;
+  width: 150px;
+}
+.login-btn:hover,
+.demo-btn:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Center Section */
+.center-section {
+  flex: 2; /* Allow more space for the center section */
+  display: flex; /* Flex layout for Quick Links and Services side by side */
+  gap: 40px; /* Add space between Quick Links and Services */
+  align-items: flex-start; /* Align items at the top */
+  margin-left: -20px; /* Move closer to the logo */
+}
+
+/* Menu Styling */
+.center-section .menu {
+  text-align: left; /* Align menu items to the left */
+  padding: 0; /* Remove extra padding */
+}
+
+.menu h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.center-section .quick-links,
+.services {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0;
+  margin: 0; /* Avoid unnecessary space */
+  display: flex; /* Keep both menus as inline-flex */
+  flex-direction: column; /* Align items vertically */
+  gap: 10px; /* Space between links */
+}
+
+.quick-links li,
+.services li {
+  margin-bottom: 0; /* Remove unnecessary bottom margin */
+}
+
+.quick-links a,
+.services a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+}
+
+.quick-links a:hover,
+.services a:hover {
+  color: #007bff; /* Highlight color on hover */
+}
+
+/* Adjust Logo Section */
+.logo-section {
+  flex: 1;
+  margin-right: 20px; /* Add space between logo and menu */
+}
+
+/* Right Section */
+.right-section {
+  flex: 1;
+  padding: 0px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background-color: transparent; /* Make form background transparent */
+  padding-right: 40px;
+}
+
+.right-section h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.right-section label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.right-section input,
+.right-section textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: transparent; /* Transparent background for input and textarea */
+  color: #333; /* Make sure text inside the input is visible */
+}
+
+.right-section input::placeholder,
+.right-section textarea::placeholder {
+  color: #888; /* Light gray color for placeholders */
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Bottom Line */
+.bottom-line {
+  height: 1px;
+  background-color: white /* Light gray color for the thin line */
+  margin-top: 40px; /* Space above the line */
+}
+
+/* Footer Section */
+.footer {
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+  padding: 20px 0;
+  background-color: white;
+}
+
+.footer p {
+  margin: 0;
+}
